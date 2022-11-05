@@ -154,19 +154,13 @@
 			<version>1.0</version>
 		</dependency>
 	    
-		 <!-- https://mvnrepository.com/artifact/net.sourceforge.cobertura/cobertura -->
-		    <dependency>
-			<groupId>net.sourceforge.cobertura</groupId>
-			<artifactId>cobertura</artifactId>
-			<version>2.1.1</version>
-			<scope>test</scope>
-			<exclusions>
-			    <exclusion>
-				<groupId>com.sun</groupId>
-				<artifactId>tools</artifactId>
-			    </exclusion>
-			</exclusions>
-		    </dependency>
+		 <dependency>
+		   <groupId>com.sun</groupId>
+		   <artifactId>tools</artifactId>
+		   <version>1.6.0</version>
+		   <scope>system</scope>
+		   <systemPath>${env.JAVA_HOME}/lib/tools.jar</systemPath>
+		 </dependency>
 
 		</dependencies>
 
